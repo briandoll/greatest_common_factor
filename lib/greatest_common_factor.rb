@@ -50,11 +50,7 @@ module BrianDoll
     
     # Find all factors for each element in the array
     def find_factor_sets(collection)
-      factor_sets = []
-      collection.each do |n|
-        factor_sets << find_all_factors(n)
-      end
-      factor_sets
+      collection.collect { |n| find_all_factors(n) }
     end
     
     # Brute force approach to finding all factors for an integer
