@@ -50,15 +50,16 @@ module BrianDoll
     
     # Find all factors for each element in the array
     def find_factor_sets(collection)
-      collection.collect { |n| find_all_factors(n) }
+      smallest_number = collection.sort.first
+      collection.collect { |n| find_all_factors(n,smallest_number) }
     end
     
     # Brute force approach to finding all factors for an integer
-    def find_all_factors(n)
+    def find_all_factors(n,starting_with=n)
       n = n.to_i
-      factor = n - 1
+      factor = (n.eql? starting_with) ? (n - 1) : starting_with
       factors = []
-      while factor > 1
+       while factor > 1
         if ((n % factor) == 0)
           factors << factor
         end
