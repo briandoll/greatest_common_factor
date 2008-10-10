@@ -17,7 +17,7 @@ This gem provides that same ability on arrays of integers.
  * [12,16,8,40].gcf => 4
  * [12,16,8,40].factored_by_gcf => [3, 4, 2, 10]
  * Fuzzy:
- * [28,38,73,93].factored_by_gcf => nil
+ * [28,38,73,93].factored_by_gcf    => [28,38,73,93]
  * [28,38,73,93].factored_by_gcf(1) => [14, 19, 36, 46]
 
 == REQUIREMENTS:
