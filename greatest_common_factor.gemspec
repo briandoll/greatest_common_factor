@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name     = "greatest_common_factor"
-  s.version  = "0.0.1"
+  s.version  = "0.0.2"
   s.date     = "2008-09-19"
   s.summary  = "Find the greatest common factor between sets of numbers.  Can also factor the array by the gcf."
   s.email    = "brian@emphaticsolutions.com"

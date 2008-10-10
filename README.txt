@@ -10,11 +10,15 @@ This gem provides that same ability on arrays of integers.
 == FEATURES:
  * Calculate the GCF on an array of integers
  * Factor the array of integers by the GCF
+ * Calculate non-exact GCF with a specified tolerance
 
 == SYNOPSIS:
  * [12,16,8,40].greatest_common_factor => 4
  * [12,16,8,40].gcf => 4
  * [12,16,8,40].factored_by_gcf => [3, 4, 2, 10]
+ * Fuzzy:
+ * [28,38,73,93].factored_by_gcf => nil
+ * [28,38,73,93].factored_by_gcf(1) => [14, 19, 36, 46]
 
 == REQUIREMENTS:
 
